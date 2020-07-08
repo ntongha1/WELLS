@@ -1,9 +1,9 @@
 			
-    ##REPORT ON A PETROPHYSICAL (SPWLA-PDDA) MACHINE LEARNING COMPETITION 2020
+  ##REPORT ON A PETROPHYSICAL (SPWLA-PDDA) MACHINE LEARNING COMPETITION 2020
  
     
 
-    ####Problem Statement
+ ####Problem Statement
 
 Compressional travel-time (DTC) and shear travel-time (DTS) logs are not acquired in all the wells drilled in a field due to financial or operational constraints. Under such circumstances, machine learning techniques can be used to predict DTC and DTS logs to improve subsurface characterization. The goal of the “SPWLA’s 1st Petrophysical Data-Driven Analytics Contest” is to develop data-driven models by processing “easy-to-acquire” conventional logs from Well #1, and use the data-driven models to generate synthetic compressional and shear travel-time logs (DTC and DTS, respectively) in Well #2. A robust data-driven model for the desired sonic-log synthesis will result in low prediction errors, which can be quantified in terms of Root Mean Squared Error by comparing the synthesized and the original DTC and DTS logs.
 
@@ -11,7 +11,7 @@ You are provided with two datasets: train.csv and test.csv. You need to build a 
 
 The predicted values should be in the same format as sample_submission.csv, and submit together with your notebook for evaluation.
 
-     ###Data Decription
+ ###Data Decription
 Files
 > #####Train.csv All the values equals to -999 are marked as missing values.
 
@@ -44,7 +44,7 @@ DTC and DTS are in the same weight during the evaluation
 Understanding and optimizing the predictions for this evaluation metric was paramount for this compeition.
 
   
-    ##Our solution in this competition earned us a final RMSE score of 16.412 on the final test data as shown on the leaderboard. 
+##Our solution in this competition earned us a final RMSE score of 16.412 on the final test data as shown on the leaderboard. 
 
 After trying a lot of techniques our approach was, first we created a notebook where we tested the performance on various machine learning techniques or algorithms on the dataset. We discovered that gradient boosting techniques like LGBM, XG-BOOST etc including CATBOOST performs extremely well in predicting the target variables.
 
